@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("1-1000 Arasında Sayı Giriniz");
+        int sayi = input.nextInt();
+        double kdv = sayi*(0.18);
+        System.out.println("Kdv Oranınız : "+kdv);
+        double sonFiyat = sayi+kdv;
+        System.out.println("Kdv'li Fiyatınız " +sonFiyat);
+
+
+    }
+}
